@@ -3,6 +3,8 @@ import Feature from './Components/Feature';
 import Header from './Components/Header';
 import About from './Components/About';
 import Presentation from './Components/Presentation';
+import Download from './Components/Download';
+
 import Contact from './Components/Contact';
 import aboutimage from './images/Frame 19.png'
 import aboutimage1 from './images/download.png'
@@ -18,7 +20,7 @@ function App() {
         button='Get The App'
       />
       <Presentation />
-      <About
+      <Download
         image={aboutimage1}
         title='Download And Get The App'
         button='Download'

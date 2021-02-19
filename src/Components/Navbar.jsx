@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import logo from '../images/logo.png'
-
+import { HashLink } from 'react-router-hash-link';
 function Navbar() {
 
   const [nav, setNav] = useState(false);
@@ -22,11 +22,12 @@ function Navbar() {
         <span className="nav-icon"></span>
       </label>
       <ul className="menu">
-        <li><a href="#" className="active">Home</a></li>
-        <li><a href="#">Feature</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">UI SS</a></li>
-        <li><a href="#">Download</a></li>
+        <li><HashLink smooth to="#" className="active">Home</HashLink></li>
+        <li><HashLink smooth to="#features">Feature</HashLink></li>
+        <li><HashLink smooth to="#about">About</HashLink></li>
+        <li><HashLink smooth to="#presentaion">UI SS</HashLink></li>
+        <li><HashLink smooth to="#download">Download</HashLink></li>
+        <li><HashLink smooth to="#contact">Contact</HashLink></li>
       </ul>
     </nav>
   );
